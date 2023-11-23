@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+main {
+  height: 52vh;
+  width: 480px;
+
+  color: #0f172a;
+  background-color: #f8fafc;
+  border-radius: 12px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  padding: 24px;
+}
