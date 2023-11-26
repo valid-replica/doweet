@@ -31,6 +31,7 @@ h1 {
 }
 
 h2 {
+  margin: 0 0 12px 0;
   font-family: "Oswald", sans-serif;
   color: #fafafa;
 }
@@ -58,34 +59,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.task-tabs {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 24px;
-}
-
-.tab-container {
-  padding: 12px 24px;
-}
-
-.tab-container:not(:last-child) {
-  border-right: 1px solid #ddd;
-}
-
-.tab-buttons {
-  border: none;
-  outline: none;
-  width: 128px;
-  color: #fafafa;
-  background-color: #181123;
-  font-size: 24px;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 12px;
-  cursor: pointer;
 }
 
 #add-task {
@@ -98,9 +72,9 @@ header {
   outline: none;
   border: none;
   border-bottom: solid;
+  width: 85%;
   color: #fafafa;
   background-color: #181123;
-  width: 85%;
   padding: 12px 8px 12px 8px;
   margin-right: 12px;
   font-size: 18px;
@@ -116,7 +90,6 @@ header {
   width: 10%;
   text-align: center;
   padding: 12px;
-  border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
   margin-left: 8px;
@@ -125,15 +98,37 @@ header {
   cursor: pointer;
 }
 
+.task-tabs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-buttons {
+  border: none;
+  outline: none;
+  width: 152px;
+  color: #fafafa;
+  background-color: #181123;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  padding: 0 0 12px 0;
+}
+
+.task-list {
+  background-color: #fafafa;
+  padding: 0 12px 24px 12px;
+}
+
 .task {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
   background: #fafafa;
-  border-radius: 6px;
-  padding: 8px;
-  padding-left: 16px;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 16px;
 }
 
 .task i {
@@ -144,7 +139,6 @@ header {
   color: #fafafa;
   background-color: #f97316;
   padding: 8px;
-  border-radius: 8px;
   font-size: 12px;
   cursor: pointer;
 }

@@ -12,16 +12,13 @@ let todoButton = document.querySelector("#todo-button");
 let completedButton = document.querySelector("#completed-button");
 
 allButton.onclick = function () {
-  allButton.style.cssText =
-    "background-color: #fbbf24; background-image: linear-gradient(45deg, #fbbf24, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;";
+  allButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
 };
 
 todoButton.onclick = function () {
-  todoButton.style.cssText =
-    "background-color: #fbbf24; background-image: linear-gradient(45deg, #fbbf24, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;";
+  todoButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
 };
 
 completedButton.onclick = function () {
-  completedButton.style.cssText =
-    "background-color: #fbbf24; background-image: linear-gradient(45deg, #fbbf24, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent;";
+  completedButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
 };

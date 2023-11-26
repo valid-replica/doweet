@@ -15,26 +15,20 @@
     <main>
       <header>
         <h1>doweet</h1>
-        <div class="task-tabs">
-          <div class="tab-container">
-            <button class="tab-buttons" id="all-button">All</button>
-          </div>
-          <div class="tab-container">
-            <button class="tab-buttons" id="todo-button">To-do</button>
-          </div>
-          <div class="tab-container">
-            <button class="tab-buttons" id="completed-button">Completed</button>
-          </div>
+
+        <div id="add-task">
+          <input type="text" placeholder="Add Task" />
+          <i class="fa-solid fa-plus" id="add-task-button"></i>
         </div>
       </header>
 
-      <div id="add-task">
-        <input type="text" placeholder="Add Task" />
-        <i class="fa-solid fa-plus" id="add-task-button"></i>
-      </div>
-
       <section>
-        <h2>Tasks</h2>
+        <div class="task-tabs">
+          <button class="tab-buttons" id="all-button">All</button>
+          <button class="tab-buttons" id="todo-button">To-do</button>
+          <button class="tab-buttons" id="completed-button">Completed</button>
+        </div>
+
         <div class="task-list">
           <div class="task">
             <span>Study</span>
