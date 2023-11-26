@@ -3,33 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doweet</title>
+    <title>doweet</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7a468605cb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
       <header>
-        <h1>Doweet</h1>
+        <h1>doweet</h1>
         <div class="task-tabs">
-          <button>All</button>
-          <button>Completed</button>
-          <button>To-do</button>
+          <div class="tab-container">
+            <button class="tab-buttons" id="all-button">All</button>
+          </div>
+          <div class="tab-container">
+            <button class="tab-buttons" id="todo-button">To-do</button>
+          </div>
+          <div class="tab-container">
+            <button class="tab-buttons" id="completed-button">Completed</button>
+          </div>
         </div>
       </header>
 
-      <article>
+      <div id="add-task">
+        <input type="text" placeholder="Add Task" />
+        <i class="fa-solid fa-plus" id="add-task-button"></i>
+      </div>
+
+      <section>
         <h2>Tasks</h2>
         <div class="task-list">
           <div class="task">
             <span>Study</span>
-            <button class="trash">Del</button>
+            <i class="fa-solid fa-trash trash" aria-hidden="true"></i>
+          </div>
+          <div class="task">
+            <span>Workout</span>
+            <i class="fa-solid fa-trash trash" aria-hidden="true"></i>
           </div>
         </div>
-        <div id="add-task">
-          <input type="text" placeholder="Add Task" />
-          <button id="add-task-button">Add</button>
-        </div>
-      </article>
+      </section>
     </main>
+    <footer>Made by Ervic Padilla</footer>
   </body>
 </html>
