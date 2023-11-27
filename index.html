@@ -17,7 +17,7 @@
         <h1>doweet</h1>
 
         <div id="add-task">
-          <input type="text" placeholder="Add Task" />
+          <input type="text" id="todo-input" placeholder="Add Task" />
           <i class="fa-solid fa-plus" id="add-task-button"></i>
         </div>
       </header>
@@ -29,16 +29,7 @@
           <button class="tab-buttons" id="completed-button">Completed</button>
         </div>
 
-        <div class="task-list">
-          <div class="task">
-            <span>Study</span>
-            <i class="fa-solid fa-trash trash" aria-hidden="true"></i>
-          </div>
-          <div class="task">
-            <span>Workout</span>
-            <i class="fa-solid fa-trash trash" aria-hidden="true"></i>
-          </div>
-        </div>
+        <ul id="todo-list"></ul>
       </section>
     </main>
     <footer>Made by Ervic Padilla</footer>
