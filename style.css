@@ -44,27 +44,12 @@ h2 {
   -webkit-text-fill-color: transparent;
 } */
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: 95vh;
-  width: 432px;
-
-  background: #181123;
-  border-radius: 12px;
-
-  padding: 24px;
+header {
+  margin-bottom: 24px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;
+h1 {
+  text-align: center;
 }
 
 #add-task {
@@ -101,10 +86,11 @@ header {
 }
 
 section {
-  max-width: 432px;
+  max-height: 432px;
+  width: 432px;
 }
 
-.task-tabs {
+/* .task-tabs {
   display: flex;
   width: 100%;
   align-items: center;
@@ -121,13 +107,14 @@ section {
   font-family: "Oswald", sans-serif;
   cursor: pointer;
   padding: 12px 0 12px 0;
-}
+} */
 
 #todo-list {
   background-color: #fafafa;
   padding: 0 12px 24px 12px;
   margin: 0;
   max-height: 300px;
+  overflow-y: scroll;
 }
 
 .todo {

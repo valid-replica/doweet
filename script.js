@@ -9,7 +9,12 @@ addTodo.onclick = function () {
     alert("Please input a task");
   } else {
     let todos = JSON.parse(localStorage.getItem("todos")) || [];
-    todos.push(todoInput.value);
+    let task = {
+      name: todoInput.value,
+      status: "todo",
+    };
+
+    todos.push(task);
     localStorage.setItem("todos", JSON.stringify(todos));
     todoInput.value = "";
     updateTodoList();
@@ -25,7 +30,7 @@ function updateTodoList() {
     let li = document.createElement("li");
     li.innerHTML = `
     <li class="todo">
-            <span>${todo}</span>
+            <span>${todo.name}</span>
             <i class="fa-solid fa-trash trash" onclick="deleteTodo(${index})" aria-hidden="true"></i>
     </li>
     `;
@@ -43,20 +48,24 @@ function deleteTodo(index) {
   updateTodoList();
 }
 
-let allButton = document.querySelector("#all-button");
-let todoButton = document.querySelector("#todo-button");
-let completedButton = document.querySelector("#completed-button");
+// function completeTodo(index) {}
 
-allButton.onclick = function () {
-  allButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
-};
+// let list = document.querySelector("ul");
 
-todoButton.onclick = function () {
-  todoButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
-};
+// let allButton = document.querySelector("#all-button");
+// let todoButton = document.querySelector("#todo-button");
+// let completedButton = document.querySelector("#completed-button");
 
-completedButton.onclick = function () {
-  completedButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
-};
+// allButton.onclick = function () {
+//   allButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
+// };
+
+// todoButton.onclick = function () {
+//   todoButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
+// };
+
+// completedButton.onclick = function () {
+//   completedButton.style.cssText = `color: #181123; background-color: #fafafa; font-size: 26px;`;
+// };
 
 updateTodoList();
