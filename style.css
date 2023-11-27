@@ -117,6 +117,10 @@ section {
   overflow-y: scroll;
 }
 
+li {
+  list-style-type: none;
+}
+
 .todo {
   display: flex;
   align-items: center;
